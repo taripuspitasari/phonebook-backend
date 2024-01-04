@@ -1,11 +1,11 @@
-GET http://localhost:3001/api/
+GET https://phonebook-backend-production-4066.up.railway.app/api/persons/1
 
 
 ###
 DELETE http://localhost:3001/api/persons/1
 
 ###
-POST http://localhost:3001/api/persons
+POST https://phonebook-backend-production-4066.up.railway.app/api/persons
 Content-Type: application/json
 
 {
