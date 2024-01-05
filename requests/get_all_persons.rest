@@ -1,14 +1,14 @@
-GET https://phonebook-backend-production-4066.up.railway.app/api/persons/1
+GET http://localhost:3001/api/persons
 
 
 ###
 DELETE http://localhost:3001/api/persons/1
 
 ###
-POST https://phonebook-backend-production-4066.up.railway.app/api/persons
+POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-    "name":"tarie",
-    "number":"021"
+    "name":"Mary Poppendieck",
+    "number":"39-23-6423122"
 }

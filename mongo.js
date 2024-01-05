@@ -22,7 +22,7 @@ const Person = mongoose.model("Person", personSchema);
 if (process.argv[4] === undefined) {
   Person.find({}).then(result => {
     result.forEach(p => {
-      console.log(p);
+      console.log(p.name, p.number);
     });
     mongoose.connection.close();
   });
