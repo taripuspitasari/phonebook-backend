@@ -3,12 +3,12 @@ const mongoose = require("mongoose");
 const personSchema = new mongoose.Schema({
   name: {
     type: String,
-    minlength: 5,
-    required: true,
+    minlength: [5, "Minimum name length is 5 characters"],
+    required: [true, "Enter a name"],
   },
   number: {
     type: String,
-    minlength: 8,
+    minlength: [8, "Minimum number length is 8 characters"],
   },
 });
 
